@@ -1,45 +1,99 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>社区</title>
+    <title>Automotive Parts Manufacturer</title>
     <style>
-        body, html {
+        body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
         }
-        img {
+        header {
+            background-color: #0056b3;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            background: white;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .testimonials {
+            background-color: #e7f3fe;
+            padding: 10px;
+            border-left: 5px solid #0056b3;
+            font-style: italic;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0056b3;
+            color: white;
+            position: relative;
+            bottom: 0;
             width: 100%;
-            height: auto;
-            display: block;
-            cursor: pointer; /* 鼠标指针样式 */
         }
     </style>
 </head>
 <body>
 
-    <img src="images/img_01.jpg"  onclick="downloadFile('aHR0cHM6Ly9oay1jZG4wMi5vc3MtY24taG9uZ2tvbmcuYWxpeXVuY3MuY29tL1BvdGF0b19EZXNrdG9wMi4zNy56aXA=')">
-	 <img src="images/img_02.jpg"  onclick="downloadFile('aHR0cHM6Ly9oay1jZG4wMi5vc3MtY24taG9uZ2tvbmcuYWxpeXVuY3MuY29tL1BvdGF0b19EZXNrdG9wMi4zNy56aXA=')">
- 	 <img src="images/img_03.jpg"  onclick="downloadFile('aHR0cHM6Ly9oay1jZG4wMi5vc3MtY24taG9uZ2tvbmcuYWxpeXVuY3MuY29tL1BvdGF0b19EZXNrdG9wMi4zNy56aXA=')">
-	 <img src="images/img_04.jpg"  onclick="downloadFile('aHR0cHM6Ly9oay1jZG4wMi5vc3MtY24taG9uZ2tvbmcuYWxpeXVuY3MuY29tL1BvdGF0b19EZXNrdG9wMi4zNy56aXA=')">
-	 <img src="images/img_05.jpg"  onclick="downloadFile('aHR0cHM6Ly9oay1jZG4wMi5vc3MtY24taG9uZ2tvbmcuYWxpeXVuY3MuY29tL1BvdGF0b19EZXNrdG9wMi4zNy56aXA=')">	 
-	
-    <script>
-        function base64Decode(base64) {
-            return atob(base64); // 解码Base64字符串
-        }
+<header>
+    <h1>Shenzhen Yixin Chuangyan Technology Co., Ltd.</h1>
+    <p>Your Premier Automotive Parts Manufacturer</p>
+</header>
 
-        function downloadFile(encodedUrl) {
-            const url = base64Decode(encodedUrl); // 解码链接
-            const link = document.createElement('a');
-            link.href = url;
-            link.download = ''; // 可选：指定文件下载时的名称
-            document.body.appendChild(link); // 将链接添加到文档中
-            link.click(); // 模拟点击链接
-            document.body.removeChild(link); // 下载后移除链接
-        }
-    </script>
+<section>
+    <h2>About Us</h2>
+    <p>Established in 2004, we focus on aluminum alloy parts processing, automotive modified parts, and precision components for film equipment. Our factory is strategically located near Bao'an International Airport, ensuring convenient logistics.</p>
+</section>
+
+<section>
+    <h2>Our Services</h2>
+    <ul>
+        <li>Customized automotive parts manufacturing</li>
+        <li>Advanced CNC machining technology</li>
+        <li>Precision aluminum alloy parts with unique anodizing</li>
+        <li>Extensive collaboration with international photography equipment manufacturers</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Key Advantages</h2>
+    <p>We offer:</p>
+    <ul>
+        <li>Competitive pricing on bulk orders</li>
+        <li>Technical expertise in design and manufacturing</li>
+        <li>Comprehensive support with a wide range of compatible products</li>
+        <li>High-quality material selection ensuring durability and performance</li>
+    </ul>
+</section>
+
+<section class="testimonials">
+    <h2>Customer Testimonials</h2>
+    <p>"The quality of the parts we received exceeded our expectations! Highly recommend their services." - International Automotive Brand</p>
+    <p>"Working with Yixin has been a game changer for our production efficiency." - Domestic Car Modifications Company</p>
+</section>
+
+<footer>
+    <p>Contact us today to learn more about our services and how we can help your business!</p>
+    <p>Email: contact@yixin.com | Phone: +86 755 1234 5678</p>
+</footer>
+
+<script>
+    // Simple script to enhance user interaction
+    document.querySelector('footer').addEventListener('click', function() {
+        alert('Thank you for your interest! We will get back to you shortly!');
+    });
+</script>
 
 </body>
 </html>
