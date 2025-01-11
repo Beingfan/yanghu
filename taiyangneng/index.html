@@ -1,69 +1,179 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>服务页面</title>
+    <title>3PEAK Solar Equipment & Inverters</title>
     <style>
-        body, html {
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
             margin: 0;
             padding: 0;
         }
-        img {
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px 0;
+            background-color: #e2e6ea;
+            border-radius: 5px;
+        }
+        .stat {
+            text-align: center;
+        }
+        .cta {
+            background-color: #28a745;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .cta:hover {
+            background-color: #218838;
+        }
+        .testimonial {
+            border-left: 4px solid #007BFF;
+            margin: 10px 0;
+            padding: 10px;
+        }
+        .advantages, .product-catalog {
+            list-style-type: none;
+            padding: 0;
+        }
+        .advantages li, .product-catalog li {
+            padding: 5px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #007BFF;
+            color: white;
+            position: relative;
+            bottom: 0;
             width: 100%;
-            height: auto;
-            display: block;
-            cursor: pointer; 
         }
     </style>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
 </head>
 <body>
 
-    <img src="static/picture/d_01.jpg">
-    <img src="static/picture/d_02.jpg">
-    <img src="static/picture/d_03.jpg">
-    <img src="static/picture/d_04.jpg">
-    <img src="static/picture/d_05.jpg">
-    <img src="static/picture/d_06.jpg">
-    <img src="static/picture/d_07.jpg">
+<header>
+    <h1>Welcome to 3PEAK</h1>
+    <h2>Your Partner in Solar Equipment and Inverters</h2>
+</header>
 
-    <script>
-        const encryptedUrls = [
-            'U2FsdGVkX18vUsZ8EWTwzX9l9cfbL4hI40KRboibn6TiKy0gmusTOZYWTXVJHdpyPvJKS8xapGWMRamgJCfnU9EIaJgcyUOzAM/pMMQL1ohsNzxMUARNFEMZtEhyByrL', 
-            'U2FsdGVkX18vUsZ8EWTwzX9l9cfbL4hI40KRboibn6TiKy0gmusTOZYWTXVJHdpyPvJKS8xapGWMRamgJCfnU9EIaJgcyUOzAM/pMMQL1ohsNzxMUARNFEMZtEhyByrL',   
-            'U2FsdGVkX18vUsZ8EWTwzX9l9cfbL4hI40KRboibn6TiKy0gmusTOZYWTXVJHdpyPvJKS8xapGWMRamgJCfnU9EIaJgcyUOzAM/pMMQL1ohsNzxMUARNFEMZtEhyByrL',   
-            'U2FsdGVkX18vUsZ8EWTwzX9l9cfbL4hI40KRboibn6TiKy0gmusTOZYWTXVJHdpyPvJKS8xapGWMRamgJCfnU9EIaJgcyUOzAM/pMMQL1ohsNzxMUARNFEMZtEhyByrL',  
-            'U2FsdGVkX18vUsZ8EWTwzX9l9cfbL4hI40KRboibn6TiKy0gmusTOZYWTXVJHdpyPvJKS8xapGWMRamgJCfnU9EIaJgcyUOzAM/pMMQL1ohsNzxMUARNFEMZtEhyByrL',   
-            'U2FsdGVkX18vUsZ8EWTwzX9l9cfbL4hI40KRboibn6TiKy0gmusTOZYWTXVJHdpyPvJKS8xapGWMRamgJCfnU9EIaJgcyUOzAM/pMMQL1ohsNzxMUARNFEMZtEhyByrL',   
-            'U2FsdGVkX18vUsZ8EWTwzX9l9cfbL4hI40KRboibn6TiKy0gmusTOZYWTXVJHdpyPvJKS8xapGWMRamgJCfnU9EIaJgcyUOzAM/pMMQL1ohsNzxMUARNFEMZtEhyByrL'    
-        ];
+<section>
+    <h2>Company Overview</h2>
+    <p>3PEAK is dedicated to the development of high-performance, high-quality, and highly reliable integrated circuit products. Our solutions include a broad range of signal chain analog chips, power management analog chips, and mixed-signal analog front ends. We serve a variety of industries including communication, industrial, automotive, new energy, and healthcare.</p>
+    <p>We went public on the STAR Market of the Shanghai Stock Exchange on September 21, 2020.</p>
+</section>
 
-        const password = '2233'; 
+<div class="stats">
+    <div class="stat">
+        <h3>100 Billion+</h3>
+        <p>Total Chip Shipments</p>
+    </div>
+    <div class="stat">
+        <h3>6000+</h3>
+        <p>Global Customers</p>
+    </div>
+    <div class="stat">
+        <h3>800+</h3>
+        <p>Global Employees</p>
+    </div>
+    <div class="stat">
+        <h3>23</h3>
+        <p>Global Offices</p>
+    </div>
+</div>
 
-        function decryptAES(encrypted) {
-            const decrypted = CryptoJS.AES.decrypt(encrypted, password);
-            return decrypted.toString(CryptoJS.enc.Utf8);
-        }
+<section>
+    <h2>Customer Testimonials</h2>
+    <div class="testimonial">
+        <p>"3PEAK's solar inverters are incredibly efficient and have helped us significantly reduce our energy costs." - <strong>John D., Solar Engineer</strong></p>
+    </div>
+    <div class="testimonial">
+        <p>"The reliability of 3PEAK's products is unmatched. We've never had any major issues." - <strong>Sarah P., Distributor</strong></p>
+    </div>
+    <div class="testimonial">
+        <p>"Exceptional support and service provided by 3PEAK. Highly recommended!" - <strong>Mike L., Project Manager</strong></p>
+    </div>
+</section>
 
-        function downloadFile(url) {
-            const link = document.createElement('a');
-            link.href = url;
-            link.download = ''; 
-            document.body.appendChild(link); 
-            link.click(); 
-            document.body.removeChild(link); 
-        }
+<section>
+    <h2>Our Advantages</h2>
+    <ul class="advantages">
+        <li>High Efficiency and Reliability</li>
+        <li>Competitive Pricing for Wholesale Buyers</li>
+        <li>Comprehensive Technical Support</li>
+        <li>Innovative Solutions Tailored to Customer Needs</li>
+        <li>Proven Track Record in Multiple Industries</li>
+    </ul>
+</section>
 
-        const images = document.querySelectorAll('img');
-        images.forEach((img, index) => {
-            img.addEventListener('click', () => {
-                const encryptedUrl = encryptedUrls[index]; 
-                const decryptedUrl = decryptAES(encryptedUrl);
-                downloadFile(decryptedUrl); 
-            });
-        });
-    </script>
+<section>
+    <h2>Pricing</h2>
+    <p>Our pricing structure is designed to offer competitive rates for bulk purchases. Contact us for a tailored quote based on your requirements and quantity.</p>
+</section>
+
+<section>
+    <h2>Product Catalog</h2>
+    <ul class="product-catalog">
+        <li>Solar Inverters - Various models and capacities</li>
+        <li>Energy Management Systems</li>
+        <li>Signal Chain Analog Chips</li>
+        <li>Power Management Solutions</li>
+        <li>Mixed-Signal Analog Products</li>
+    </ul>
+</section>
+
+<div class="cta" onclick="alert('Contact us now for more information!');">
+    Contact Us
+</div>
+
+<section>
+    <h2>Our Vision</h2>
+    <p>To be a respected leader in the semiconductor industry for analog and mixed-signal solutions.</p>
+</section>
+
+<section>
+    <h2>Our Mission</h2>
+    <p>To provide innovative, competitively comprehensive analog and mixed-signal products and solutions, building fair and trusting partnerships that empower global manufacturing.</p>
+</section>
+
+<section>
+    <h2>Our Values</h2>
+    <ul>
+        <li>Integrity</li>
+        <li>Responsibility</li>
+        <li>Collaboration</li>
+        <li>Innovation</li>
+        <li>Growth</li>
+    </ul>
+</section>
+
+<footer>
+    <p>&copy; 2024 3PEAK. All Rights Reserved.</p>
+</footer>
 
 </body>
 </html>
